@@ -1,0 +1,526 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+/* PRUEBA -----------------------------------------------------------------------------------*/
+
+h3,
+h2 {
+    text-align: center;
+}
+
+a:visited {
+    color: #39694C;
+}
+
+a {
+    color: white;
+}
+
+#footer__index {
+    color: white;
+}
+
+.ventas__overlay {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #37683388;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .ventas__overlay:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .venta__emergente {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+
+
+/* HEADER -----------------------------------------------------------------------------------*/
+h1 {
+    display: none;
+}
+
+header nav ul li a {
+    color: #39694C;
+}
+
+
+header nav ul {
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.6rem;
+    height: 2rem;
+}
+
+@media (min-width:300px) and (max-width:900px) {
+    header nav ul {
+        font-size: 1.2rem;
+    }
+}
+
+/* INDEX -----------------------------------------------------------------------------------*/
+.main__index {
+    background: linear-gradient(black 40%, #F1F6FA);
+    color: white;
+}
+
+.entrada {
+    position: relative;
+}
+
+.entrada__video {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.entrada__texto {
+    position: sticky;
+    bottom: 5px;
+    left: 200px;
+    right: 200px;
+    font-size: 1.5rem;
+    color: #39694c;
+    max-height: 25%;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+@media (min-width:300px) and (max-width:900px) {
+    .entrada__texto {
+        font-size: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+/* ADOPCION MEDIA ---------------------------------------------------------------- */
+.adopcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9rem;
+    margin: 2rem;
+}
+
+.adopcion__tarjeta {
+    color: white;
+}
+
+.adopcion__articulo {
+    width: 100%;
+    height: 100%;
+
+}
+
+.adopcion__imagen {
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    position: relative;
+
+}
+
+.adopcion__titulo {
+    position: absolute;
+    color: black;
+    left: 100px;
+    right: 100px;
+    bottom: 120px;
+    font-size: 2rem;
+}
+
+.adopcion__subtitulo{
+    font-size: 3rem;
+}
+
+.adopcion__conclusion {
+    margin-bottom: 2rem;
+}
+
+@media (min-width:300px) and (max-width:900px) {
+    .adopcion__titulo {
+        position: absolute;
+        color: black;
+        left: 20px;
+        right: 20px;
+        bottom: 30px;
+        font-size: 1.2rem;
+    }
+
+}
+
+/* VENTAS CSS COMIENZA ---------------------------------------------------------------- */
+
+.ventas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.ventas__articulo {
+    border: 2px solid white;
+    width: 500px;
+}
+
+.ventas__imagen {
+    width: 100%;
+    height: 100%;
+}
+
+.ventas__articulo:hover {
+    background-color: white;
+}
+
+.ventas__precio {
+    text-align: center;
+}
+
+/* RAZAS COMIENZA ---------------------------------------------------------------- */
+.razas {
+    background-image: url(../assets/imagenes/gato-caja.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.razas__parrafo {
+    color: black;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding-top: 4rem;
+    font-size: 2rem;
+}
+
+.razas__prueba {
+    height: 28rem;
+    width: 100%;
+}
+
+.razas__tipos {
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+
+.razas__articulo {
+    border: 2px solid white;
+    width: 220px;
+    bottom: 2rem;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.razas__imagen {
+    width: 100%;
+
+}
+
+@media (min-width:1200px) and (max-width:1500px) {
+    .razas__prueba {
+        height: 20rem;
+        width: 100%;
+    }
+}
+
+@media (min-width:300px) and (max-width:1200px) {
+    .razas__parrafo {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .razas__prueba {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 12rem 12rem;
+    }
+
+    .razas__tipos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .razas__articulo {
+        border: 2px solid white;
+        width: 200px;
+    }
+}
+
+/* FOOTER -----------------------------------------------------------------------------------*/
+
+footer div ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer div {
+    text-align: center;
+}
+
+/* CSS CONTACTO ----------------------------------------------------------------------------------- */
+.body__contacto {
+    background: linear-gradient(black 40%, #39694c);
+    color: white;
+}
+
+.contacto {
+    display: flex;
+    height: 20rem;
+    border: 2px solid #39694C;
+    margin: 1rem;
+}
+
+.contacto__texto {
+    width: 90rem;
+    padding: 2rem;
+    overflow: scroll;
+    background-image: url(../assets/imagenes/gato-contacto.jpg);
+    background-size: cover;
+}
+
+.contacto__mapa {
+    width: 90rem;
+    height: 100%;
+}
+
+.formulario {
+    display: flex;
+    border: 2px solid #39694C;
+    margin: 1rem;
+}
+
+.formulario__mensaje {
+    font-size: 2rem;
+    color: #39694C;
+    display: flex;
+    width: 100%;
+    margin: 0.5rem;
+}
+
+.formulario__caja {
+    height: 5rem;
+    width: 100%;
+    margin: 0.5rem;
+    margin-top: 1rem;
+    max-width: fit-content;
+}
+
+.formulario__caja__enviar {
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    height: 2rem;
+    background-color: rgb(26, 48, 24);
+    color: white;
+    box-shadow: 0px 0px 26px -5px rgba(210,215,223,0.84);
+    -webkit-box-shadow: 0px 0px 26px -5px rgba(210,215,223,0.84);
+    -moz-box-shadow: 0px 0px 26px -5px rgba(210,215,223,0.84);
+}
+
+.formulario__datos {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+}
+
+
+.titulo__contacto {
+    border-bottom: 5px solid #39694C;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+@media (min-width:300px) and (max-width:900px) {
+    .contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto__texto {
+        width: 100%;
+        padding: 2rem;
+        max-width: fit-content;
+        overflow: scroll;
+        background-size: cover;
+    }
+
+    .contacto__mapa {
+        width: 100%;
+    }
+
+    .formulario {
+        align-content: center;
+        align-items: center;
+    }
+
+    .formulario__caja {
+        max-width: fit-content;
+        text-align: center;
+    }
+
+    .formulario__datos {
+        max-width: fit-content;
+
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+.formulario__texto{
+    width: 13rem;
+    height: 3rem;
+    text-align: center;
+}
+
+    .formulario__mensaje {
+        font-size: 2rem;
+        color: #39694C;
+        display: flex;
+        width: 100%;
+        margin: 0.5rem;
+        text-align: center;
+    }
+
+    .formulario__caja__enviar {
+        width: 100%;
+        align-self: center;
+    }
+}
+
+/* CSS SUPLEMENTOS ---------------------------------------------------------------------------------------------------------- */
+.titulo__suplementos {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 5px solid #39694C;
+}
+
+.body__suplementos {
+    background: linear-gradient(black 40%, #39694c);
+    color: white;
+}
+
+/* CSS BLOG ---------------------------------------------------------------------------------------------------------------- */
+.blog {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(9, 300px);
+    grid-template-areas:
+        "noticia noticia noticia side"
+        "noticia noticia noticia side"
+        "noticia noticia noticia side"
+        "noticia2 noticia2 noticia2 side2"
+        "noticia2 noticia2 noticia2 side2"
+        "noticia2 noticia2 noticia2 side2"
+        "noticia3 noticia3 noticia3 side3"
+        "noticia3 noticia3 noticia3 side3"
+        "noticia3 noticia3 noticia3 side3"
+    ;
+}
+
+.blog__imagen {
+    height: 100%;
+    width: 100%;
+}
+
+.blog__noticia {
+    grid-area: noticia;
+    padding: 2rem;
+}
+
+.blog__noticia2 {
+    grid-area: noticia2;
+    padding: 2rem;
+}
+
+.blog__noticia3 {
+    grid-area: noticia3;
+    padding: 2rem;
+}
+
+.blog__sideimg {
+    height: 100%;
+    width: 100%;
+}
+
+.blog__side {
+    grid-area: side;
+    justify-items: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.blog__side2 {
+    grid-area: side2;
+    justify-items: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.blog__side3 {
+    grid-area: side3;
+    justify-items: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+@media (min-width:300px) and (max-width:1200px) {
+    .blog {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.titulo__blog {
+    margin-top: 2rem;
+}
+
+.body__blog {
+    background: linear-gradient(black 40%, #39694c);
+    color: white;
+}
