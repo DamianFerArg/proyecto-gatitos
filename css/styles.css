@@ -48,14 +48,14 @@ header nav ul {
   height: 2rem;
 }
 header nav ul li a {
-  color: #39694C;
+  color: #39694c;
 }
 
 a {
   color: white;
 }
 a:visited {
-  color: #39694C;
+  color: #39694c;
 }
 
 footer {
@@ -340,14 +340,14 @@ footer div div {
 .titulo__suplementos {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 5px solid #39694C;
+  border-bottom: 5px solid #39694c;
   font-size: 2rem;
 }
 
 .titulo__suplemento {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 5px solid #39694C;
+  border-bottom: 5px solid #39694c;
   font-size: 2rem;
   color: #3ead6b;
 }
@@ -407,7 +407,7 @@ footer div div {
 .contacto {
   display: flex;
   height: 20rem;
-  border: 2px solid #39694C;
+  border: 2px solid #39694c;
   margin: 1rem;
 }
 .contacto__texto {
@@ -424,12 +424,12 @@ footer div div {
 
 .formulario {
   display: flex;
-  border: 2px solid #39694C;
+  border: 2px solid #39694c;
   margin: 1rem;
 }
 .formulario__mensaje {
   font-size: 2rem;
-  color: #39694C;
+  color: #39694c;
   display: flex;
   width: 100%;
   margin: 0.5rem;
@@ -446,7 +446,7 @@ footer div div {
   margin-right: 0.5rem;
   margin-left: 0.5rem;
   height: 2rem;
-  background-color: rgb(26, 48, 24);
+  background-color: #1a3018;
   color: white;
   box-shadow: 0px 0px 26px -5px rgba(210, 215, 223, 0.84);
   -webkit-box-shadow: 0px 0px 26px -5px rgba(210, 215, 223, 0.84);
@@ -459,7 +459,7 @@ footer div div {
 }
 
 .titulo__contacto {
-  border-bottom: 5px solid #39694C;
+  border-bottom: 5px solid #39694c;
   font-size: 2rem;
   margin-top: 1.5rem;
 }
@@ -501,7 +501,7 @@ footer div div {
   }
   .formulario__mensaje {
     font-size: 2rem;
-    color: #39694C;
+    color: #39694c;
     display: flex;
     width: 100%;
     margin: 0.5rem;

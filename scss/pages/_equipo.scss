@@ -29,7 +29,7 @@
         height: 100%;
         position: absolute;
         z-index: -1;
-        border: 2px solid #39694c;
+        border: 2px solid $color-primario;
         transition: all .25s ease-out;
     }
 
@@ -39,12 +39,12 @@
         height: 100%;
         position: absolute;
         z-index: -1;
-        border: 2px solid #39694c;
+        border: 2px solid $color-primario;
         transition: all .25s ease-out;
     }
 
     &::before {
-        background-color: #39694c;
+        background-color: $color-primario;
         top: -15px;
         left: -15px;
     }

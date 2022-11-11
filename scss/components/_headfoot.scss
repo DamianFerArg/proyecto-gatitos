@@ -9,7 +9,7 @@ header nav ul {
 
     li {
         a {
-            color: #39694C;
+            color: $color-primario;
         }
     }
 
@@ -19,7 +19,7 @@ a {
     color: white;
 
     &:visited {
-        color: #39694C;
+        color: $color-primario;
     }
 }
 
