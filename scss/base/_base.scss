@@ -1,0 +1,40 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+h3,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    display: none;
+}
+
+.main__index {
+    background: linear-gradient(black 40%, #F1F6FA);
+    color: white;
+}
+
+.body__contacto {
+    background: linear-gradient(black 40%, #39694c);
+    color: white;
+}
+
+.body__suplementos {
+    background: linear-gradient(black 40%, #39694c);
+    color: white;
+}
+
+.body__blog {
+    background-color: black;
+}
+
+.body__equipo {
+    background-color: black;
+}
+

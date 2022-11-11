@@ -1,0 +1,225 @@
+.equipo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+
+    &__gato {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+        scale: 0.7;
+    }
+}
+
+
+.wrap-nano {
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        border: 2px solid #39694c;
+        transition: all .25s ease-out;
+    }
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        border: 2px solid #39694c;
+        transition: all .25s ease-out;
+    }
+
+    &::before {
+        background-color: #39694c;
+        top: -15px;
+        left: -15px;
+    }
+
+    &::after {
+        bottom: -15px;
+        right: -15px;
+    }
+
+    &:hover::before {
+        top: 15px;
+        left: 15px;
+    }
+
+    &:hover::after {
+        bottom: 15px;
+        right: 15px;
+    }
+    
+}
+
+.wrap-damaris {
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        border: 2px solid #dcac5c;
+        transition: all .25s ease-out;
+    }
+    
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        border: 2px solid #dcac5c;
+        transition: all .25s ease-out;
+    }
+    
+    &::before {
+        background-color: #dcac5c;
+        top: -15px;
+        left: -15px;
+    }
+    
+    &::after {
+        bottom: -15px;
+        right: -15px;
+    }
+    
+    &:hover::before {
+        top: 15px;
+        left: 15px;
+    }
+    
+    &:hover::after {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+
+.wrap-dami {
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        border: 2px solid red;
+        transition: all .25s ease-out;
+    }
+    
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        border: 2px solid red;
+        transition: all .25s ease-out;
+    }
+    
+    &::before {
+        background-color: red;
+        top: -15px;
+        left: -15px;
+    }
+    
+    &::after {
+        bottom: -15px;
+        right: -15px;
+    }
+    
+    &:hover::before {
+        top: 15px;
+        left: 15px;
+    }
+    
+    &:hover::after {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+.wrap__titulo {
+    position: absolute;
+    bottom: 4rem;
+    color: white;
+    right: 3rem;
+    left: 3rem;
+}
+
+.wrap__titulo2 {
+    position: absolute;
+    bottom: 1.5rem;
+    color: white;
+    right: 3rem;
+    left: 3rem;
+}
+
+.wrap__gato {
+    position: absolute;
+    bottom: 5.5rem;
+    color: white;
+    right: 3rem;
+    left: 3rem;
+    font-size: 2rem;
+}
+
+.wrap__gato2 {
+    position: absolute;
+    bottom: 1rem;
+    color: white;
+    right: 3rem;
+    left: 3rem;
+    font-size: 2rem;
+}
+
+@media (min-width:300px) and (max-width:900px) {
+
+
+    .equipo {
+        scale: 0.5;
+    }
+
+    .equipo__gato {
+        scale: 0.4;
+    }
+
+    .wrap__titulo {
+        scale: 1.5;
+    }
+
+    .wrap__titulo2 {
+        scale: 1.5;
+    }
+
+    .wrap__gato {
+        scale: 1.2;
+    }
+
+    .wrap__gato2 {
+        scale: 1.2;
+    }
+}
+
+
+
+
+

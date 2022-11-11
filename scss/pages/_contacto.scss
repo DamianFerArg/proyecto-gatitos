@@ -1,0 +1,124 @@
+.contacto {
+    display: flex;
+    height: 20rem;
+    border: 2px solid #39694C;
+    margin: 1rem;
+
+    &__texto {
+        width: 90rem;
+        padding: 2rem;
+        overflow: scroll;
+        background-image: url(../assets/gif/gato-contacto.gif);
+        background-size: contain;
+    }
+    &__mapa {
+        width: 90rem;
+        height: 100%;
+    }
+}
+
+.formulario {
+    display: flex;
+    border: 2px solid #39694C;
+    margin: 1rem;
+
+    &__mensaje {
+        font-size: 2rem;
+        color: #39694C;
+        display: flex;
+        width: 100%;
+        margin: 0.5rem;
+    }
+    
+    &__caja {
+        height: 5rem;
+        width: 100%;
+        margin: 0.5rem;
+        margin-top: 1rem;
+        max-width: fit-content;
+    }
+
+    &__caja__enviar {
+        margin-bottom: 1rem;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        height: 2rem;
+        background-color: rgb(26, 48, 24);
+        color: white;
+        box-shadow: 0px 0px 26px -5px rgba(210, 215, 223, 0.84);
+        -webkit-box-shadow: 0px 0px 26px -5px rgba(210, 215, 223, 0.84);
+        -moz-box-shadow: 0px 0px 26px -5px rgba(210, 215, 223, 0.84);
+    }
+
+    &__datos {
+        display: flex;
+        flex-direction: column;
+        width: 40rem;
+    }
+}
+
+.titulo__contacto {
+    border-bottom: 5px solid #39694C;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+@media (min-width:300px) and (max-width:900px) {
+    .contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto__texto {
+        width: 100%;
+        padding: 2rem;
+        max-width: fit-content;
+        overflow: scroll;
+        background-size: cover;
+    }
+
+    .contacto__mapa {
+        width: 100%;
+    }
+
+    .formulario {
+        align-content: center;
+        align-items: center;
+    }
+
+    .formulario__caja {
+        max-width: fit-content;
+        text-align: center;
+    }
+
+    .formulario__datos {
+        max-width: fit-content;
+
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .formulario__texto {
+        width: 13rem;
+        height: 3rem;
+        text-align: center;
+    }
+
+    .formulario__mensaje {
+        font-size: 2rem;
+        color: #39694C;
+        display: flex;
+        width: 100%;
+        margin: 0.5rem;
+        text-align: center;
+    }
+
+    .formulario__caja__enviar {
+        width: 100%;
+        align-self: center;
+    }
+}
