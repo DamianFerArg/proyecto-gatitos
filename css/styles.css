@@ -38,6 +38,10 @@ h1 {
   background-color: black;
 }
 
+#activo {
+  color: #dcac5c;
+}
+
 header nav ul {
   background: none;
   display: flex;
@@ -49,6 +53,9 @@ header nav ul {
 }
 header nav ul li a {
   color: #39694c;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 a {
@@ -56,6 +63,30 @@ a {
 }
 a:visited {
   color: #39694c;
+}
+a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #39694c;
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+a:hover {
+  color: #39694c;
+}
+a:hover::after {
+  width: 100%;
+}
+
+#activo {
+  color: #dcac5c;
 }
 
 footer {

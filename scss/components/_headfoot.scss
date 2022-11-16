@@ -10,6 +10,9 @@ header nav ul {
     li {
         a {
             color: $color-primario;
+            position: relative;
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
         }
     }
 
@@ -21,20 +24,49 @@ a {
     &:visited {
         color: $color-primario;
     }
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: $color-primario;
+        width: 0;
+        left: 50%;
+        bottom: 0;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+        transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+    }
+
+    &:hover{
+        color: $color-primario;
+
+        &::after{
+            width: 100%;
+        }
+    }
+
+
+}
+
+#activo{
+    color: #dcac5c;
 }
 
 footer {
     background-color: black;
 
-div ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
+    div ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 
-    div div{
+    div div {
         text-align: center;
-    border-bottom: 2px dotted white;
+        border-bottom: 2px dotted white;
     }
 }
 
