@@ -549,8 +549,8 @@ footer div div {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+  margin-bottom: 8rem;
+  margin-top: 8rem;
 }
 .equipo__gato {
   width: 100%;
@@ -558,8 +558,8 @@ footer div div {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
   scale: 0.7;
 }
 
@@ -732,6 +732,14 @@ footer div div {
   }
   .wrap__gato2 {
     scale: 1.2;
+  }
+  .equipo {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .equipo__gato {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 }
 
