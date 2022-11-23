@@ -58,17 +58,17 @@ header nav ul li a {
   transition: all 0.4s ease;
 }
 
-a {
+header nav ul li a {
   color: white;
 }
-a:visited {
+header nav ul li a:visited {
   color: #39694c;
 }
-a::after {
+header nav ul li a::after {
   content: "";
   position: absolute;
   height: 2px;
-  background-color: #39694c;
+  background-color: #dcac5c;
   width: 0;
   left: 50%;
   bottom: 0;
@@ -78,10 +78,10 @@ a::after {
   -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
 }
-a:hover {
+header nav ul li a:hover {
   color: #39694c;
 }
-a:hover::after {
+header nav ul li a:hover::after {
   width: 100%;
 }
 
@@ -91,15 +91,18 @@ a:hover::after {
 
 footer {
   background-color: black;
+  padding: 0.7rem;
 }
 footer div ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding: 0.7rem;
 }
 footer div div {
   text-align: center;
-  border-bottom: 2px dotted white;
+  border-bottom: 2px solid #39694c;
+  padding: 0.7rem;
 }
 
 #footer__index {
@@ -283,7 +286,7 @@ footer div div {
 .adopcion__subtitulo {
   font-size: 3rem;
 }
-.adopcionconclusion {
+.adopcion__conclusion {
   margin-bottom: 2rem;
 }
 
@@ -314,6 +317,13 @@ footer div div {
   text-align: center;
   color: black;
   font-weight: bold;
+}
+.razas__parrafo1 {
+  background: rgba(0, 0, 0, 0.733);
+  border: 2px #eee solid;
+  color: white;
+  margin-bottom: 2rem;
+  border-radius: 10px;
 }
 .razas__prueba {
   height: 28rem;
@@ -373,14 +383,6 @@ footer div div {
   margin-bottom: 1rem;
   border-bottom: 5px solid #39694c;
   font-size: 2rem;
-}
-
-.titulo__suplemento {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-bottom: 5px solid #39694c;
-  font-size: 2rem;
-  color: #3ead6b;
 }
 
 .main__blog {
@@ -720,6 +722,7 @@ footer div div {
   }
   .equipo__gato {
     scale: 0.4;
+    position: relative;
   }
   .wrap__titulo {
     scale: 1.5;

@@ -18,7 +18,7 @@ header nav ul {
 
 }
 
-a {
+header nav ul li a {
     color: white;
 
     &:visited {
@@ -29,7 +29,7 @@ a {
         content: "";
         position: absolute;
         height: 2px;
-        background-color: $color-primario;
+        background-color: $color-secundario;
         width: 0;
         left: 50%;
         bottom: 0;
@@ -57,16 +57,19 @@ a {
 
 footer {
     background-color: black;
+    padding: 0.7rem;
 
     div ul {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        padding: 0.7rem;
     }
 
     div div {
         text-align: center;
-        border-bottom: 2px dotted white;
+        border-bottom: 2px solid $color-primario;
+        padding: 0.7rem;
     }
 }
 

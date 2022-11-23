@@ -86,7 +86,7 @@
         font-size: 3rem;
     }
 
-    &conclusion {
+    &__conclusion {
         margin-bottom: 2rem;
     }
 }
@@ -121,6 +121,14 @@
         text-align: center;
         color: black;
         font-weight: bold;
+    }
+
+    &__parrafo1 {
+        background: rgba(0, 0, 0, 0.733);
+        border: 2px #eee solid;
+        color: white;
+        margin-bottom: 2rem;
+        border-radius: 10px;
     }
 
     &__prueba {
