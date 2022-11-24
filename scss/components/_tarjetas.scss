@@ -45,26 +45,25 @@
     gap: 2rem;
     margin-bottom: 3rem;
     margin-top: 3rem;
-}
 
-.ventas__articulo {
-    border: 2px solid white;
-    width: 500px;
-}
+    &__articulo {
+        border: 2px solid white;
+        width: 500px;
 
-.ventas__imagen {
-    width: 100%;
-    height: 100%;
-}
+        &:hover {
+            background-color: white;
+        }
+    }
 
-.ventas__articulo:hover {
-    background-color: white;
-}
+    &__imagen {
+        width: 100%;
+        height: 100%;
+    }
 
-.ventas__precio {
-    text-align: center;
+    &__precio {
+        text-align: center;
+    }
 }
-
 
 @media (min-width:300px) and (max-width:900px) {
     .overlay {

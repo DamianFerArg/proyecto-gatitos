@@ -131,17 +131,10 @@
         border-radius: 10px;
     }
 
-    &__prueba {
-        height: 28rem;
-        width: 100%;
-
-    }
-
     &__tipos {
         display: flex;
-        margin-top: 2rem;
+        margin-top: 5rem;
         justify-content: space-around;
-
     }
 
     &__articulo {
@@ -163,25 +156,12 @@
     }
 }
 
-@media (min-width:1200px) and (max-width:1500px) {
-    .razas__prueba {
-        height: 20rem;
-        width: 100%;
-    }
-}
-
 @media (min-width:300px) and (max-width:1200px) {
     .razas__parrafo {
         text-align: center;
         font-size: 1.2rem;
         margin-left: 1rem;
         margin-right: 1rem;
-    }
-
-    .razas__prueba {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 12rem 12rem;
     }
 
     .razas__tipos {
@@ -195,4 +175,3 @@
         width: 200px;
     }
 }
-

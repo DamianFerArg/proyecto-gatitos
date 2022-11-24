@@ -31,6 +31,9 @@
         z-index: -1;
         border: 2px solid $color-primario;
         transition: all .25s ease-out;
+        background-color: $color-primario;
+        top: -15px;
+        left: -15px;
     }
 
     &::after {
@@ -41,15 +44,6 @@
         z-index: -1;
         border: 2px solid $color-primario;
         transition: all .25s ease-out;
-    }
-
-    &::before {
-        background-color: $color-primario;
-        top: -15px;
-        left: -15px;
-    }
-
-    &::after {
         bottom: -15px;
         right: -15px;
     }
@@ -63,7 +57,7 @@
         bottom: 15px;
         right: 15px;
     }
-    
+
 }
 
 .wrap-damaris {
@@ -77,8 +71,11 @@
         z-index: -1;
         border: 2px solid #dcac5c;
         transition: all .25s ease-out;
+        background-color: #dcac5c;
+        top: -15px;
+        left: -15px;
     }
-    
+
     &::after {
         content: "";
         width: 100%;
@@ -87,24 +84,15 @@
         z-index: -1;
         border: 2px solid #dcac5c;
         transition: all .25s ease-out;
-    }
-    
-    &::before {
-        background-color: #dcac5c;
-        top: -15px;
-        left: -15px;
-    }
-    
-    &::after {
         bottom: -15px;
         right: -15px;
     }
-    
+
     &:hover::before {
         top: 15px;
         left: 15px;
     }
-    
+
     &:hover::after {
         bottom: 15px;
         right: 15px;
@@ -123,8 +111,11 @@
         z-index: -1;
         border: 2px solid red;
         transition: all .25s ease-out;
+        background-color: red;
+        top: -15px;
+        left: -15px;
     }
-    
+
     &::after {
         content: "";
         width: 100%;
@@ -133,24 +124,15 @@
         z-index: -1;
         border: 2px solid red;
         transition: all .25s ease-out;
-    }
-    
-    &::before {
-        background-color: red;
-        top: -15px;
-        left: -15px;
-    }
-    
-    &::after {
         bottom: -15px;
         right: -15px;
     }
-    
+
     &:hover::before {
         top: 15px;
         left: 15px;
     }
-    
+
     &:hover::after {
         bottom: 15px;
         right: 15px;
@@ -195,42 +177,27 @@
 
 
     .equipo {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
         scale: 0.5;
+
+        &__gato {
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            scale: 0.4;
+            position: relative;
+        }
     }
 
-    .equipo__gato {
-        scale: 0.4;
-        position: relative;
-    }
-
-    .wrap__titulo {
-        scale: 1.5;
-    }
-
+    .wrap__titulo,
     .wrap__titulo2 {
         scale: 1.5;
     }
 
+    .wrap__gato2,
     .wrap__gato {
         scale: 1.2;
     }
 
-    .wrap__gato2 {
-        scale: 1.2;
-    }
 
-    .equipo{
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-
-        &__gato{
-            margin-bottom: 1rem;
-            margin-top: 1rem;
-        }
-    }
 }
-
-
-
-
-

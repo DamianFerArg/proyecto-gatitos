@@ -6,30 +6,29 @@ header nav ul {
     align-items: center;
     font-size: 1.6rem;
     height: 2rem;
+}
 
-    li {
-        a {
-            color: $color-primario;
-            position: relative;
-            -webkit-transition: all 0.4s ease;
-            transition: all 0.4s ease;
-        }
+@media (min-width:300px) and (max-width:900px) {
+    header nav ul {
+        font-size: 1rem;
     }
-
 }
 
 header nav ul li a {
-    color: $color-primario;
+    color: white;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 
     &:visited {
-        color: $color-primario;
+        color: white;
     }
 
     &::after {
         content: "";
         position: absolute;
         height: 2px;
-        background-color: $color-secundario;
+        background-color: $color-primario;
         width: 0;
         left: 50%;
         bottom: 0;
@@ -40,10 +39,10 @@ header nav ul li a {
         transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
     }
 
-    &:hover{
+    &:hover {
         color: white;
 
-        &::after{
+        &::after {
             width: 100%;
         }
     }
@@ -51,8 +50,8 @@ header nav ul li a {
 
 }
 
-#activo{
-    color: $color-secundario;
+#activo {
+    color: $color-primario;
 }
 
 footer {
@@ -76,10 +75,4 @@ footer {
 
 #footer__index {
     color: white;
-}
-
-@media (min-width:300px) and (max-width:900px) {
-    header nav ul {
-        font-size: 1rem;
-    }
 }
