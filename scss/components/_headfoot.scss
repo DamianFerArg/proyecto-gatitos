@@ -19,7 +19,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: white;
+    color: $color-primario;
 
     &:visited {
         color: $color-primario;
@@ -41,7 +41,7 @@ header nav ul li a {
     }
 
     &:hover{
-        color: $color-primario;
+        color: white;
 
         &::after{
             width: 100%;

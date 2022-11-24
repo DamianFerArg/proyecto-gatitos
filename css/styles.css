@@ -59,7 +59,7 @@ header nav ul li a {
 }
 
 header nav ul li a {
-  color: white;
+  color: #39694c;
 }
 header nav ul li a:visited {
   color: #39694c;
@@ -79,7 +79,7 @@ header nav ul li a::after {
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
 }
 header nav ul li a:hover {
-  color: #39694c;
+  color: white;
 }
 header nav ul li a:hover::after {
   width: 100%;
